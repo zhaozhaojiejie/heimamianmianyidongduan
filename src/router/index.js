@@ -1,15 +1,20 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-
+import test from '../components/test.vue'
+import Login from '@/views/login'
 Vue.use(VueRouter)
+
 // 路由配置
 const routes = [
-  // {
-  //   path: '/',
-  //   name: 'home',
-  //   component: Home
-  // },
+  {
+    path: '/',
+    // name: 'button',
+    component: test
+  }, {
+    path: '/login',
+    name: 'loginPage',
+    component: Login
+  }
   // {
   //   path: '/about',
   //   name: 'about',
